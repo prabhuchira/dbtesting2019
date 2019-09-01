@@ -27,6 +27,9 @@ mongoose.connect(process.env.MONGODB_URL,{useCreateIndex:true,useNewUrlParser:tr
 
 app.use(express.json());
 app.use(router2);
+app.get('/',async function(req,res){
+    res.send('Hello guys! DB IS working')    
+})
 app.post('/users',async (req,res)=>{
         const user = new userModel(req.body);
     try{
