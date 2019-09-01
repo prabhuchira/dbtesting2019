@@ -4,6 +4,7 @@
   "description": "",
   "main": "req.js",
   "scripts": {
+    "start":"node mongoose2.js",
     "dev":"env-cmd -f ./config/dev.env nodemon mongoose2.js"
     
   },
